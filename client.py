@@ -62,6 +62,7 @@ if __name__ == '__main__':
                 msg, addr = sock.recvfrom(4096)
                 print("Current interface: {0}:{1}".format(*sock.getsockname()))
                 print(addr, server_address)
+                print(msg)
 
                 if (addr[1] == server_address[1]):
                     print("SERVER ::: From dedicated server !")
